@@ -2,4 +2,4 @@ default:
   credentials: ''
   projectid: ''
   dataset: ''
-  
+  table: ''
