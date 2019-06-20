@@ -38,3 +38,6 @@ Once you have successfully created your image you could:
 2. Register the image in the Google Cloud Container Registry.
 3. Deploy your image to a VM on Google Compute Engine or
 4. deploy your image to Google Kubernetes Engine (GKE)
+
+# Build Pipeline
+Trying Travis CI for build.
