@@ -3,4 +3,3 @@ services:
 
 before_install:
   - docker build -t rbatch .
-  - docker run -t rbatch:latest
