@@ -35,6 +35,17 @@ If all goes well you should see some output similar to the following:
 # Next steps
 Once you have successfully created your image you could:
 1. Modify the project to use your own R script.
-2. Register the image in the Google Cloud Container Registry.
+    - Update the Dockerfile to use your R script 
+        ```
+        CMD ["Rscript", "myscript.R"]
+        ```
+2. Register the image in the Google Cloud Container Registry (using GCP cloud shell to run these commands) .
+    - e.g.,
+        ```
+        docker tag rbatch gcr.io/data-science-283604/rbatch:v0.1
+        ```
+        ```
+        docker push gcr.io/your-gcp-project-id/rbatch
+        ```
 3. Deploy your image to a VM on Google Compute Engine or
 4. deploy your image to Google Kubernetes Engine (GKE)
