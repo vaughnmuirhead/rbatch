@@ -1,0 +1,21 @@
+# If you want to execute this container via Kubectl modify this file
+
+apiVersion: batch/v1
+kind: Job
+metadata:
+  # Unique key of the Job instance
+  name: rbatch
+spec:
+  template:
+    metadata:
+      name: rbatch
+    spec:
+      containers:
+      - name: rbatch
+        image: gcr.io/your-project-id/rbatch
+        command: []
+        args: []
+      # Do not restart containers after they exit
+      restartPolicy: Never
+  # of retries before marking as failed.
+  backoffLimit: 2
