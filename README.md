@@ -48,4 +48,9 @@ Once you have successfully created your image you could:
         docker push gcr.io/your-gcp-project-id/rbatch
         ```
 3. Deploy your image to a VM on Google Compute Engine or
-4. deploy your image to Google Kubernetes Engine (GKE)
+4. Execute your image no Google Kubernetes Engine (GKE)
+    - First modify job.yaml with your container image location.
+    - Then execute on GKE
+    ```
+    kubectl apply -f job.yaml
+    ```
