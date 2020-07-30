@@ -35,7 +35,7 @@ If all goes well you should see some output similar to the following:
 # Next steps
 Once you have successfully created your image you could:
 1. Modify the project to use your own R script.
-    - Update the Dockerfile to use your R script 
+    - Update the Dockerfile to use your R script (ensure you copy your script into the project directory.) 
         ```
         CMD ["Rscript", "myscript.R"]
         ```
