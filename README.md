@@ -42,7 +42,7 @@ Once you have successfully created your image you could:
 2. Register the image in the Google Cloud Container Registry (using GCP cloud shell to run these commands) .
     - e.g.,
         ```
-        docker tag rbatch gcr.io/data-science-283604/rbatch:v0.1
+        docker tag rbatch gcr.io/your-gcp-project-id/rbatch:v0.1
         ```
         ```
         docker push gcr.io/your-gcp-project-id/rbatch
